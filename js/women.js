@@ -51,4 +51,5 @@ function carousel(selector, data) {
 }
 
 carousel(".firstCarousel", swimsuit);
-
+carousel(".secondCarousel", underwear);
+carousel(".thirdCarousel", sweat);

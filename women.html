@@ -66,8 +66,7 @@
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                     <li><a class="dropdown-item" href="women.html#swimsuit">Maillot de Bain</a></li>
                                     <li><a class="dropdown-item" href="women.html#underwear">Lingerie</a></li>
-                                    <li><a class="dropdown-item" href="women.html#accessories">Accesoires</a></li>
-                                    <li><a class="dropdown-item" href="women.html#top">Hauts</a></li>
+                                    <li><a class="dropdown-item" href="women.html#top">Veste</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -92,4 +91,77 @@
 
             </nav>
         </header>
-    
+        
+        <main>
+            <h1 class="text-center fw-bolder text-danger display-2 mb-3">FEMME</h1>
+                <!-- first carousel swimsuit -->
+                <div class="container text-center my-3" id="swimsuit">
+                    <h3 class="font-weight-light pb-3 command"> 
+                        Maillot de bain <span class="text-danger">1 et 2 pièces</span>
+                    </h3>
+                    <div class="row mx-auto my-auto justify-content-center">
+                        <div id="recipeCarousel" data-bs-ride="carousel">
+                            <div class="carousel-slick firstCarousel"  role="listbox">
+                                <!-- insertion via index.js et swimsuit.js-->
+                            </div>
+                        </div >
+                    </div>
+                </div>
+
+                <!-- second carousel swimsuit -->
+                <div class="container text-center my-3" id="underwear">
+                    <h3 class="font-weight-light pb-3 command"> 
+                        Lingerie <span class="text-danger">fine</span>
+                    </h3>
+                    <div class="row mx-auto my-auto justify-content-center">
+                        <div id="recipeCarousel" data-bs-ride="carousel">
+                            <div class="carousel-slick secondCarousel"  role="listbox">
+                                <!-- insertion via index.js et underwear.js-->
+                            </div>
+                        </div >
+                    </div>
+                </div>
+               
+                <!-- third carousel swimsuit -->
+                <div class="container text-center my-3" id="top">
+                    <h3 class="font-weight-light pb-3 command"> 
+                        Haut <span class="text-danger">femme</span>
+                    </h3>
+                    <div class="row mx-auto my-auto justify-content-center">
+                        <div id="recipeCarousel2" data-bs-ride="carousel">
+                            <div class="carousel-slick thirdCarousel"  role="listbox">
+                                <!-- insertion via index.js et top.js-->
+                            </div>
+                        </div >
+                    </div>
+                </div>
+
+
+        </main>
+
+        <footer>
+            <footer  class="d-flex align-items-center justify-content-center bg-danger pb-2">
+                <img class="relance pt-3 me-3 h-auto" src="images/etiquette-FR-kit-com.png"alt="site financé par le plan relance du gouvernement">
+                <div>
+                    <p class="copyright pt-3 text-center text-white">
+                            © 2021 NUIT DE FOLIE.<br> Tous droits réservés
+                    </p>
+                    <div class="director fw-bolder flex-column text-center">
+                        <img style="width: 5rem;" height="auto;" src="images/mermaidSmall.png" alt="logo de la sirene d'aurore Creation Web"/>
+                        <p><a class="text-white fw-bolder text-decoration-none ms-2" href="https://aurorecreationweb.fr">Aurore Creation Web </a></p>
+                        <a href="law.html" class="text-white fw-normal text-decoration-none">Mentions légales</a>
+                    </div>
+                </div>
+            </footer>
+        </footer>
+    </body>
+    <script src="js/swimsuit.js"></script>
+    <script src="js/underwear.js"></script>
+    <script src="js/sweat.js"></script>
+
+    <script src="js/women.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous">
+    </script>
+</html>
