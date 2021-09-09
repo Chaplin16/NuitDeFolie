@@ -15,10 +15,6 @@ html {
   column-gap: 1rem;
 }
 
-main {
-  padding-bottom: 5rem !important;
-}
-
 .text {
   text-align: justify;
 }
@@ -32,6 +28,20 @@ p img.left {
 }
 p img.right {
   float: right;
+}
+
+.card-img {
+  margin-left: 0 !important;
+  height: 100% !important;
+  width: auto !important;
+}
+.card-img img {
+  object-fit: contain !important;
+  height: 13rem !important;
+}
+
+.slick-prev:before, .slick-next:before {
+  color: #000;
 }
 
 footer {

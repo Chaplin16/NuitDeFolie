@@ -17,9 +17,7 @@ html{
     }
 }
 //main
-main{
-    padding-bottom: 5rem!important;
-}
+
 .text{
     text-align: justify;
 }
@@ -35,6 +33,19 @@ p img{
     }
 }
 
+.card-img{
+    margin-left: 0!important;
+    height: 100%!important;
+    width: auto!important;
+    & img{
+        object-fit: contain!important;
+        height: 13rem!important;
+    }
+}
+
+.slick-prev:before, .slick-next:before{
+    color: #000;
+}
 // footer
 footer{
     flex-direction: column;
