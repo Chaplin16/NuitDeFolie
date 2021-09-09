@@ -24,7 +24,7 @@
         crossorigin="anonymous">
         
         <link rel="icon" type="image/png" sizes="16x16"
-        href="images/favicon.png">
+        href="images/logo.png">
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <link rel="stylesheet" type="text/css" href="./js/slick/slick.css"/>
@@ -34,27 +34,101 @@
         <title>Nuit de Folie</title>
     </head>
     <body>
-        <header></header>
-        <main></main>
-        <footer>
-            <div class="footer w-100 bg-dark d-flex justify-content-center align-items-center">
-                <img class=" h-auto pt-3 pb-3" src="images/etiquette-FR-kit-com.png"
-                    alt="site financé par le plan relance du gouvernement">
-                <div class="formality">
-                    <p class="copyright text-white text-center m-auto">
-                        © 2021 Nuit de Folie. Tous droits réservés
+        <!-- NAVBAR -->
+        <header>
+            <div id="top"></div>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="logo fw-bolder lead">
+                    <img class="logo__img" src="images/logo.png" alt="logo de l'entreprise NUIT DE FOLIE">
+                    06 07 66 69 21
+                </div>
+                <button class="navbar-toggler bg-dark border border-3 border-danger text-white fw-bolder me-2" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                        <span>MENU</span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link text-danger" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <a class="text-decoration-none dropdown-toggle text-danger" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Femme
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <li><a class="dropdown-item" href="index.html#swimsuit">Maillot de Bain</a></li>
+                                    <li><a class="dropdown-item" href="index.html#underwear">Lingerie</a></li>
+                                    <li><a class="dropdown-item" href="index.html#accessories">Accesoires</a></li>
+                                    <li><a class="dropdown-item" href="index.html#top">Hauts</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <a class="text-decoration-none dropdown-toggle text-danger" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Homme
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <li><a class="dropdown-item" href="index.html#swimsuit">Chemise</a></li>
+                                    <li><a class="dropdown-item" href="index.html#underwear">Tee shirt</a></li>
+                                    <li><a class="dropdown-item" href="index.html#boxer">Boxer</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-danger" href="infos.html">Info</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+        </header>
+    
+            <main class="m-5 mt-2">
+                <section class="mb-5" >
+                    <h1 class="text-center fw-bolder text-danger display-2 mb-3"> Nuit de Folie</h1>
+                    <p>
+                        <img class="left me-3 mt-2 h-auto rounded" src="images/dummies-swimsuit.jpeg">
                     </p>
-                    <p><a target="_blank" href="https://icones8.fr/icon/122983/maillot-de-bain">Maillot de bain</a> icône par <a target="_blank" href="https://icones8.fr">Icons8</a></p>
-                    <div class="d-flex align-items-center pb-3 pt-3 flex-column">
-                        <img src="images/mermaidSmall-red.png" class="mermaid ms-2 h-auto"
-                            alt="logo de la sirene d'aurore Creation Web" />
-                        <a class="text-decoration-none" href="https://aurorecreationweb.fr"> Aurore Creation Web </a>
-                    </div>
+                    <p class="text">
+                        Venez vous laisser séduire, Mesdames, par ces magnifiques parures de sous-vêtements et par ces maillots de bain ensorcelants à une ou deux pièces. Pour vous Messieurs, toute une gamme de chemises et de tee-shirts aux motifs et coloris divers vous mettront en valeur par leur originalité et leur couleur. Déclinés du S au XXL, les prix sont imbattables pour cette qualité! 
+                    </p>
+                    <p>
+                        <img class="right ms-3 h-auto rounded" src="images/dummies-switsuit-2.jpeg">
+                    </p>
+                    <p class="text fw-bold ">
+                        Entrez dans ce petit écrin plein de charme et vous serez conquis! 
+                    </p>
+                </section>
+ 
+               
+            </main>
+
+        <footer  class="d-flex align-items-center justify-content-center bg-danger pb-2">
+            <img class="relance pt-3 me-3 h-auto" src="images/etiquette-FR-kit-com.png"alt="site financé par le plan relance du gouvernement">
+            <div>
+                <p class="copyright pt-3 text-center text-white">
+                        © 2021 NUIT DE FOLIE.<br> Tous droits réservés
+                </p>
+                <div class="director fw-bolder flex-column text-center">
+                    <img style="width: 5rem;" height="auto;" src="images/mermaidSmall.png" alt="logo de la sirene d'aurore Creation Web"/>
+                    <p><a class="text-white fw-bolder text-decoration-none ms-2" href="https://aurorecreationweb.fr">Aurore Creation Web </a></p>
+                    <a href="law.html" class="text-white fw-normal text-decoration-none">Mentions légales</a>
                 </div>
             </div>
-        </footer>
+            </footer>
     </body>
     <script src="js/index.js"></script>
+    <script src="js/swimsuit.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous">
