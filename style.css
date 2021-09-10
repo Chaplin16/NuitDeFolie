@@ -6,6 +6,9 @@ html {
   min-height: 100% !important;
 }
 
+.navbar {
+  background-image: url("images/geometric-leaves.png");
+}
 .navbar-toggler:hover {
   background-color: #fff !important;
   color: #000 !important;
@@ -55,9 +58,41 @@ footer a:hover {
   color: #4871e2 !important;
 }
 
+.mentions {
+  padding-top: 3rem;
+  padding-left: 3.5rem;
+}
+.mentions h1 {
+  text-shadow: 1px 1px 2px #000;
+}
+
+.return_home {
+  padding-left: 7vh;
+  align-items: center;
+  margin-top: 3rem;
+}
+.return_home .link_home:hover {
+  color: #585858 !important;
+}
+.return_home .link_home .arrow {
+  width: 40px;
+}
+
 @media all and (min-width: 600px) {
   footer {
     flex-direction: row !important;
+  }
+}
+@media all and (max-width: 992px) {
+  .navbar-nav {
+    line-height: 1rem !important;
+  }
+  .navbar-nav .nav-link {
+    padding-left: 1rem !important;
+  }
+  .navbar-nav .dropdown {
+    padding-left: 1rem !important;
+    line-height: 1.7rem !important;
   }
 }
 
