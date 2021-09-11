@@ -7,7 +7,7 @@ function carousel(selector, data) {
     $(element).slick({
         centerMode: true,
         centerPadding: '60px',
-        slidesToShow: 1,
+        slidesToShow: 2.5,
         arrows: true,
         adaptiveHeight: true,
         responsive: [{
@@ -16,35 +16,35 @@ function carousel(selector, data) {
                     arrows: true,
                     centerMode: true,
                     centerPadding: '40px',
+                    slidesToShow: 3
+                }
+           },
+            {
+                breakpoint: 1000,
+                settings: {
+                    arrows: true,
+                    centerMode: true,
+                    centerPadding: '1rem',
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: true,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1.3
+                }
+            },
+            {
+                breakpoint: 550,
+                settings: {
+                    arrows: true,
+                    centerMode: true,
+                    centerPadding: '40px',
                     slidesToShow: 1
                 }
-        //    },
-        //     {
-        //         breakpoint: 1000,
-        //         settings: {
-        //             arrows: true,
-        //             centerMode: true,
-        //             centerPadding: '40px',
-        //             slidesToShow: 2.5
-        //         }
-        //     },
-        //     {
-        //         breakpoint: 768,
-        //         settings: {
-        //             arrows: true,
-        //             centerMode: true,
-        //             centerPadding: '40px',
-        //             slidesToShow: 1.5
-        //         }
-        //     },
-        //     {
-        //         breakpoint: 480,
-        //         settings: {
-        //             arrows: true,
-        //             centerMode: true,
-        //             centerPadding: '40px',
-        //             slidesToShow: 1
-        //         }
              }
          ]
     });

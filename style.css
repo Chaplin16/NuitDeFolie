@@ -18,6 +18,14 @@ html {
   column-gap: 1rem;
 }
 
+.women, .men {
+  background-image: url("images/geometric-leaves.png");
+}
+
+h1, h3 {
+  font-family: "Times New Roman", Times, serif;
+}
+
 .text {
   text-align: justify;
 }
@@ -31,6 +39,47 @@ p img.left {
 }
 p img.right {
   float: right;
+}
+
+.link {
+  justify-content: center;
+}
+
+.card {
+  border: 0px solid transparent !important;
+  filter: brightness(100%);
+  -webkit-filter: brightness(100%);
+  transition: transform 300ms;
+}
+.card:hover {
+  filter: brightness(80%);
+  -webkit-filter: brightness(80%);
+  transform: scale(1.06);
+}
+.card img {
+  width: 10rem;
+  height: 8rem;
+}
+.card img:hover ~ h2 {
+  color: red !important;
+  margin: 0 !important;
+}
+.card img:hover ~ .color {
+  color: #000 !important;
+  text-shadow: 1px 1px 1px #fff;
+}
+.card h2 {
+  top: 3rem;
+  left: 18%;
+  color: white !important;
+  pointer-events: none;
+  text-shadow: 1px 1px 1px #000;
+}
+.card .card-title1 {
+  right: 1rem;
+}
+.card .card-title2 {
+  left: 25% !important;
 }
 
 .card-img {
@@ -57,6 +106,9 @@ footer .director {
 footer a:hover {
   color: #4871e2 !important;
 }
+footer h3 {
+  font-size: 1rem !important;
+}
 
 .mentions {
   padding-top: 3rem;
@@ -78,7 +130,20 @@ footer a:hover {
   width: 40px;
 }
 
+.block {
+  flex-direction: column;
+}
+
 @media all and (min-width: 600px) {
+  .index {
+    max-width: 80%;
+    margin: auto;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+
   footer {
     flex-direction: row !important;
   }
@@ -93,6 +158,20 @@ footer a:hover {
   .navbar-nav .dropdown {
     padding-left: 1rem !important;
     line-height: 1.7rem !important;
+  }
+}
+@media all and (min-width: 800px) {
+  .block {
+    flex-direction: row !important;
+  }
+
+  iframe {
+    width: 100% !important;
+  }
+}
+@media all and (min-width: 1200px) {
+  .link {
+    justify-content: space-around;
   }
 }
 

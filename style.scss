@@ -1,3 +1,14 @@
+@mixin effect {
+    filter: brightness(100%);
+    -webkit-filter: brightness(100%);
+    transition: transform 300ms;
+    &:hover {
+        filter: brightness(80%);
+        -webkit-filter: brightness(80%);
+        transform:scale(1.06);
+    }
+}
+
 html{
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -5,6 +16,7 @@ html{
     font-size: 1.2rem;
     min-height: 100%!important;
 }
+
 //navbar
 .navbar {
     background-image: url("images/geometric-leaves.png");
@@ -18,12 +30,20 @@ html{
 
     }
 }
+
 //main
+.women, .men{
+    background-image: url("images/geometric-leaves.png");
+}
+h1, h3{
+    font-family: "Times New Roman", Times, serif;
+}
 
 .text{
     text-align: justify;
+    
 }
-
+//images dans le texte
 p img{
     max-width: 45%;
     box-shadow: 1px 1px 5px #000;
@@ -34,7 +54,41 @@ p img{
         float: right;
     }
 }
+//images des liens index.html
+.link{
+    justify-content: center;
+}
+.card{
+    border: 0px solid transparent!important;
+    @include effect;
+    img{
+        width:10rem;
+        height:8rem;
+        &:hover ~ h2 {
+            color: red!important;
+            margin: 0!important;
+        }
+        &:hover ~ .color{
+            color: #000!important;
+            text-shadow: 1px 1px 1px #fff;
+        }
+    }
+    h2{
+        top: 3rem;
+        left: 18%;
+        color: white!important;
+        pointer-events:none;
+        text-shadow: 1px 1px 1px #000;
+    }
+    .card-title1{
+        right:1rem;
+    }
+    .card-title2{
+        left:25%!important;
+    }
+}
 
+//images des carousels
 .card-img{
     margin-left: 0!important;
     height: 100%!important;
@@ -58,8 +112,11 @@ footer{
     & a:hover{
         color:#4871e2!important;
     }
+    h3{
+        font-size:1rem!important
+    }
 }
-// law.html
+
 //page law.html
 .mentions{
     padding-top: 3rem;
@@ -81,10 +138,23 @@ footer{
         }
     }
 }
-
+//page info
+.block{
+    flex-direction: column;
+}
 //responsive
 @media all and (min-width:600px){
-    footer{
+    .index{
+        max-width: 80%;
+        margin: auto;
+    }
+    section {
+
+        h2{
+            font-size: 1.5rem;
+        }
+    }
+        footer{
         flex-direction: row!important;
     }
 }
@@ -99,5 +169,21 @@ footer{
             padding-left: 1rem!important; 
             line-height: 1.7rem!important;
         }
+    }
+}
+
+
+@media all and (min-width:800px){
+    .block{
+        flex-direction: row!important;
+    }
+    iframe{
+        width: 100%!important;
+    }
+}
+
+@media all and (min-width:1200px){
+    .link{
+        justify-content: space-around;
     }
 }
