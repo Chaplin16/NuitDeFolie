@@ -148,17 +148,13 @@ footer h3 {
 }
 @media all and (max-width: 400px) {
   .card img {
-    width: 9rem !important;
+    width: 7.5rem !important;
   }
   .card h2 {
     font-size: 1.2rem;
   }
 }
 @media all and (max-width: 350px) {
-  .card img {
-    width: 7.5rem !important;
-  }
-
   .logo {
     font-size: 1rem !important;
   }
