@@ -2,7 +2,7 @@ const teeshirt = [
     {
         id:1,
         attachment: "images/teeshit-black-grey.jpeg",
-        alt:"tee shirt noir et blanc pour homme chez Nuit de Folie"
+        alt:"tee shirt noir et gris pour homme chez Nuit de Folie"
     },
     {
         id:2,
