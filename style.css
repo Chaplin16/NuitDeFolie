@@ -134,6 +134,35 @@ footer h3 {
   flex-direction: column;
 }
 
+@media all and (max-width: 450px) {
+  .index {
+    max-width: 100%;
+  }
+  .index section:first-of-type {
+    margin: 1rem !important;
+  }
+
+  .info {
+    margin-left: 1rem !important;
+  }
+}
+@media all and (max-width: 400px) {
+  .card img {
+    width: 9rem !important;
+  }
+  .card h2 {
+    font-size: 1.2rem;
+  }
+}
+@media all and (max-width: 350px) {
+  .card img {
+    width: 7.5rem !important;
+  }
+
+  .logo {
+    font-size: 1rem !important;
+  }
+}
 @media all and (min-width: 600px) {
   .index {
     max-width: 80%;
