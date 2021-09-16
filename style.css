@@ -22,7 +22,7 @@ html {
   background-image: url("images/geometric-leaves.png");
 }
 
-h1, h3 {
+h1, h4 {
   font-family: "Times New Roman", Times, serif;
 }
 
@@ -60,7 +60,7 @@ p img.right {
   width: 10rem;
   height: 8rem;
 }
-.card img:hover ~ h2 {
+.card img:hover ~ h3 {
   color: red !important;
   margin: 0 !important;
 }
@@ -68,7 +68,7 @@ p img.right {
   color: #000 !important;
   text-shadow: 1px 1px 1px #fff;
 }
-.card h2 {
+.card h3 {
   top: 3rem;
   left: 18%;
   color: white !important;
@@ -115,7 +115,7 @@ footer .director {
 footer a:hover {
   color: #4871e2 !important;
 }
-footer h3 {
+footer h4 {
   font-size: 1rem !important;
 }
 
@@ -157,9 +157,9 @@ footer h3 {
 }
 @media all and (max-width: 400px) {
   .bracelet img, .card img {
-    width: 5.5rem !important;
+    width: 7.5rem !important;
   }
-  .bracelet h2, .card h2 {
+  .bracelet h3, .card h3 {
     font-size: 1.2rem;
   }
 
@@ -178,7 +178,7 @@ footer h3 {
     margin: auto;
   }
 
-  section h2 {
+  section h3 {
     font-size: 1.5rem;
   }
 
