@@ -98,7 +98,7 @@ p img.right {
 }
 .card-img img {
   object-fit: contain !important;
-  height: 13rem !important;
+  height: 13rem;
 }
 
 .slick-prev:before, .slick-next:before {
@@ -157,10 +157,14 @@ footer h3 {
 }
 @media all and (max-width: 400px) {
   .bracelet img, .card img {
-    width: 7.5rem !important;
+    width: 5.5rem !important;
   }
   .bracelet h2, .card h2 {
     font-size: 1.2rem;
+  }
+
+  .card-img img {
+    height: 10rem !important;
   }
 }
 @media all and (max-width: 350px) {

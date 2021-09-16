@@ -28,5 +28,10 @@ const teeshirt = [
         id:6,
         attachment: "images/teeshirt-black-color.jpeg",
         alt:"tee shirt noir et couleur pour homme chez Nuit de Folie"
-    }
+    },
+    {
+        id:7,
+        attachment: "images/sweat-smiley.jpeg",
+        alt:" sweat smiley femme"
+    },
 ]
